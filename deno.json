@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "run": "deno run --allow-net main.tsx",
+    "run-watch": "deno run --allow-net --watch main.tsx"
+  }
+}
