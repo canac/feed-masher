@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "run": "deno run --allow-net main.tsx",
-    "run-watch": "deno run --allow-net --watch main.tsx"
+    "run": "deno run --allow-net --allow-env=PORT main.tsx",
+    "run-watch": "deno run --allow-net --allow-env=PORT --watch main.tsx"
   }
 }

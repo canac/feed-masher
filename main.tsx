@@ -10,6 +10,8 @@ const gistUrlPattern = new URLPattern({
   pathname: "/:user/:gistId",
 });
 
+const port = parseInt(Deno.env.get("PORT") ?? "", 10);
+
 serve(async (req) => {
   if (req.method !== "GET") {
     return new Response("Bad Method", { status: 405 });
@@ -47,4 +49,4 @@ serve(async (req) => {
   }
 
   return new Response("Not Found", { status: 404 });
-});
+}, { port: Number.isNaN(port) ? undefined : port });
