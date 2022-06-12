@@ -35,7 +35,7 @@ export class MergedFeed {
       1,
     );
 
-    const baseUrl = "https://canac-feed-masher.deno.dev";
+    const baseUrl = "https://feed-masher.deno.dev";
     return '<?xml version="1.0" encoding="utf-8"?>\n' + await renderToString(
       <feed xmlns="http://www.w3.org/2005/Atom">
         <title>{this.#title}</title>
